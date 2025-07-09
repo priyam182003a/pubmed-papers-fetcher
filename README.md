@@ -32,23 +32,6 @@ Add it to your PATH if needed (Poetry will show instructions).
 poetry install
 
 
-
-🚀 How to Run
-Run the tool with your query:
-
-poetry run get-papers-list "drug discovery" --debug --file new_results.csv
-
-
-Example explanation:
-
-"drug discovery" → your PubMed search query.
-
---debug → shows debug output: found IDs, filter info, etc.
-
---file new_results.csv → writes results to new_results.csv.
-
-
-
 📌 Command Line Options
 Option	Description
 -h, --help	Show usage instructions.
@@ -84,6 +67,42 @@ Argparse or Typer — for the CLI.
 MIT — free to modify and distribute.
 
 ✅ LLM used: This project was developed with assistance from an AI Large Language Model (ChatGPT). Conversation-based suggestions were used to plan code structure, heuristics, and command-line usage.LINK : https://chatgpt.com/share/686e41c1-e614-8013-b5b4-5fbfac74516d
+
+🚀 How to Run
+Run the tool with your query:
+
+poetry run get-papers-list "drug discovery" --debug --file new_results.csv
+
+
+Example explanation:
+
+"drug discovery" → your PubMed search query.
+
+--debug → shows debug output: found IDs, filter info, etc.
+
+--file new_results.csv → writes results to new_results.csv.
+
+
+
+✅ How to Run Tests
+To verify that everything works correctly, run:
+
+poetry run pytest
+
+This command will:
+
+Run all test files in the tests/ folder.
+
+Make sure the PubMed API returns valid results.
+
+Check that the filtering and CSV logic work as expected.
+
+You should see output like:
+
+tests/test_fetcher.py ..   [100%]
+2 passed in 3.5s
+
+This confirms the code is working correctly!
 
 
 👋 Author
