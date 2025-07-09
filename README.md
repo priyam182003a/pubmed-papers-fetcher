@@ -37,6 +37,8 @@ poetry install
 Run the tool with your query:
 
 poetry run get-papers-list "drug discovery" --debug --file new_results.csv
+
+
 Example explanation:
 
 "drug discovery" → your PubMed search query.
