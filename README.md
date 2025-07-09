@@ -17,25 +17,40 @@ Typed Python, Poetry for packaging, and good code organization
 
 pubmed_papers_fetcher/
   __init__.py            # Makes this folder a Python module
+  
   fetcher.py             # Core functions: search PubMed, fetch details, filter, save CSV
+  
   cli.py                 # Command-line interface using argparse / typer
+  
 tests/
+
   test_fetcher.py        # Unit tests (example)
+  
 pyproject.toml           # Poetry dependency & build config
+
 README.md                # This file
 
+
+
 2️⃣ Install Poetry:
+
 curl -sSL https://install.python-poetry.org | python3 -
+
 Add it to your PATH if needed (Poetry will show instructions).
 
 3️⃣ Install project dependencies:
+
 poetry install
 
 
 📌 Command Line Options
+
 Option	Description
+
 -h, --help	Show usage instructions.
+
 -d, --debug	Print debug logs during execution.
+
 -f, --file	Specify output filename for CSV export.
 
 
